@@ -1,0 +1,32 @@
+/*Imagem lateral direitra*/
+#img-bg{
+    background-image: url(../../assets/Vingadores-Ultimato-batalha-final-capa.jpg);
+
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Cor da coluna esquerda*/
+.bg-coluna{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+/*Cor e tamanho do título da tela de cadastro*/
+.text-color-size{
+    font-size: 30pt;
+    color: rgb(109, 8, 109);
+}
+
+/*Cor do texto do formulário*/
+.text-color{
+    color: rgb(109, 8, 109);
+}
+
+/*Cor e texto do botão*/
+button{
+    color: white;
+    background-color: rgb(109, 8, 109);
+}
