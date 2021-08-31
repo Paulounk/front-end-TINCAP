@@ -1,0 +1,23 @@
+/* Imagem aleatória que irá ser trocada depois*/
+#img-bg{
+    background-image: url(https://blog.upbrasil.com/wp-content/uploads/2019/11/aprenda-como-implantar-a-gestao-de-beneficios-na-sua-empresa-em-8-passos.jpeg);
+
+    height: 120vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-coluna{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.text-size{
+    font-size: 30pt;
+}
+
+button{
+    color: white;
+    background-color: rgb(82, 77, 77);
+}
