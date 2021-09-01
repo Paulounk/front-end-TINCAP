@@ -7,11 +7,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarFamiliaComponent
+    CadastrarFamiliaComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
