@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CadastrarFamiliaComponent
   ],
   imports: [
     BrowserModule,

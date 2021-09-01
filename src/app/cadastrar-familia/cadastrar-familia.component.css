@@ -1,0 +1,58 @@
+/*Imagem lateral direitra*/
+#img-bg{
+    background-image: url(https://i.imgur.com/4qeyiiR.png);
+
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Cor da coluna esquerda*/
+.bg-coluna{
+    /*background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);*/
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+/*Cor e tamanho do título da tela de cadastro*/
+.text-color-size-title{
+    font-size: 14pt;
+    color: rgb(0, 0, 0);
+}
+
+/*Cor do texto do formulário*/
+.text-color-size-form{
+    font-size: 14pt;
+    color: rgb(0, 0, 0);
+}
+
+/*Cor e texto do botão*/
+button{
+    font-size: 15pt;
+    color: white;
+    background-color:rgb(134, 106, 99);
+    width: 30%;
+    border-radius: 15px; 
+}
+
+/*Cor das bordas e da sombra do form*/
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+/*Raio das bordas do form*/
+.form-control{
+    border-radius: 50px;
+    font-size: 13pt;
+    color: rgb(0, 0, 0);
+}
+
+/*Box do form*/
+.box{   
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    background-image: linear-gradient(300deg, #f6d365 0%, #fda085 100%);
+    padding: 40px;
+}
