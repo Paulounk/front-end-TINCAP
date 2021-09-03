@@ -10,14 +10,36 @@
 }
 
 .bg-coluna{
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
-.text-size{
-    font-size: 30pt;
+.text-color-size-form{
+    font-size: 14pt;
+    color: #000000;
 }
 
 button{
+    font-size: 15pt;
     color: white;
-    background-color: rgb(82, 77, 77);
+    background-color:rgb(134, 106, 99);
+    width: 30%;
+    border-radius: 15px; 
+}
+
+.form-control{
+    border-radius: 50px;
+    font-size: 13pt;
+    color: #000000;
+}
+
+form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+.box{   
+    border-radius: 20px;
+    border-color: #000000;
+    background-image: linear-gradient(300deg, #f6d365 0%, #fda085 100%);
+    padding: 40px;
 }
