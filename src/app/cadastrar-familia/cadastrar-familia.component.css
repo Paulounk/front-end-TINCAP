@@ -12,18 +12,18 @@
 /*Cor da coluna esquerda*/
 .bg-coluna{
     /*background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);*/
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #5f5e5d 0%, #666160 100%);
 }
 
 /*Cor e tamanho do título da tela de cadastro*/
 .text-color-size-title{
-    font-size: 14pt;
+    font-size: 30pt;
     color: rgb(0, 0, 0);
 }
 
 /*Cor do texto do formulário*/
 .text-color-size-form{
-    font-size: 14pt;
+    font-size: 16pt;
     color: rgb(0, 0, 0);
 }
 
@@ -33,7 +33,7 @@ button{
     color: white;
     background-color:rgb(134, 106, 99);
     width: 30%;
-    border-radius: 15px; 
+    border-radius: 0px;
 }
 
 /*Cor das bordas e da sombra do form*/
@@ -44,8 +44,8 @@ button{
 
 /*Raio das bordas do form*/
 .form-control{
-    border-radius: 50px;
-    font-size: 13pt;
+    border-radius: 0px;
+    font-size: 14pt;
     color: rgb(0, 0, 0);
 }
 
@@ -53,6 +53,7 @@ button{
 .box{   
     border-radius: 20px;
     border-color: rgb(0, 0, 0);
-    background-image: linear-gradient(300deg, #f6d365 0%, #fda085 100%);
+    /*background-image: linear-gradient(300deg, #f6b765 0%, #fda085 100%);*/
+    background-color:rgb(246, 231, 216);
     padding: 40px;
 }
