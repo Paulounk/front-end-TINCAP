@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 export class CadastrarFamiliaComponent implements OnInit {
 
   user: UsuarioModel = new UsuarioModel()
-  confrimarSenha: string
+  confirmarSenha: string
 
   constructor(
     private authService: AuthService,
@@ -23,7 +23,7 @@ export class CadastrarFamiliaComponent implements OnInit {
   }
 
   confirmeSenha(event: any) {
-    this.confrimarSenha = event.target.value
+    this.confirmarSenha = event.target.value
   }
 
   cadastrar() {
@@ -37,7 +37,7 @@ export class CadastrarFamiliaComponent implements OnInit {
 
     if (this.user.senha.length < 8) {
       alert('A senha deve conter no mínimo 8 dígitos.')
-    } else if (this.user.senha != this.confrimarSenha) {
+    } else if (this.user.senha != this.confirmarSenha) {
       alert('As senhas informadas estão diferentes!')
     } else {
       this.authService.cadastrar(this.user).subscribe((resp: UsuarioModel) => {
@@ -47,7 +47,4 @@ export class CadastrarFamiliaComponent implements OnInit {
       })
     }
   }
-
-
-
 }
