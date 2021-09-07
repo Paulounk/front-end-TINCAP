@@ -1,17 +1,22 @@
 <div class="container-fluid">
-
     <div class="row bg-coluna align-items-center">
-        <div class="col-md-5 text-color-size-form font-weight">
-            <div class="row d-flex justify-content-center">
 
+        <div class="col-md-8">
+            <div class="col-md-12 square">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="row d-flex justify-content-center text-color-size-form">
                 <div class="col-md-10 box">
 
-                    <p class="text-center font-weight mb-4">Cadastro Empresarial</p>
+                    <h1 class="text-center mb-4 text-color-size-title">Cadastro Empresarial</h1>
 
                     <div class="form-group">
                         <label for="nome">Nome Completo</label>
                         <input class="form-control" type="text" name="nome" id="nome"
-                            placeholder="Digite o seu nome completo">
+                            placeholder="Digite seu nome completo">
                     </div>
 
                     <div class="form-group">
@@ -23,12 +28,13 @@
                     <div class="form-group">
                         <label for="usuario">Usuário</label>
                         <input class="form-control" type="text" name="usuario" id="usuario"
-                            placeholder="Digite seu usuário de acesso">
+                            placeholder="Digite seu usuario de acesso">
                     </div>
 
                     <div class="form-group">
                         <label for="foto">Link da Foto</label>
-                        <input class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+                        <input class="form-control" type="text" name="foto" id="foto"
+                            placeholder="Link da sua foto">
                     </div>
 
                     <div class="form-group">
@@ -39,22 +45,18 @@
 
                     <div class="form-group">
                         <label for="confirmarSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
-                            placeholder="Confirme sua senha">
+                        <input class="form-control" type="password"
+                            name="confirmarSenha" id="confirmarSenha" placeholder="Confirme sua senha">
                     </div>
 
-                    <div class="d-flex justify-content-center mt-4 mb-4">
-                        <button type="submit" class="btn mr-4 font-weight-bold" routerLink='/acessar'>Cancelar</button>
-                        <button type="submit" class="btn font-weight-bold">Cadastrar</button>
+                    <div class="d-flex justify-content-center mt-4 mb-0">
+                        <button type="submit" class="btn mr-4 btn-lg" routerLink='/entrar'>Cancelar</button>
+                        <button type="submit" class="btn" >Cadastrar</button>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="col-md-7" id="img-bg"></div>
     </div>
 
-    <footer>
-
-    </footer>
 </div>
