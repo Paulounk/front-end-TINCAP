@@ -47,10 +47,18 @@ button{
 
 /*Raio das bordas do form*/
 .form-control{
+    background-color: white;
     border-radius: 0px;
     font-size: 12pt;
-    color: rgb(0, 0, 0);
+    
+    color: black;
 }
+
+/*Alterações do placeholder*/
+input::placeholder {
+    color: grey;
+
+} 
 
 /*Box do form*/
 .box{  

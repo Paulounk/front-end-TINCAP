@@ -9,7 +9,7 @@ const routes: Routes = [
   /*{path: 'perfil-f', component: PerfilEComponent},*/
   {path: 'entrar', component: EntrarComponent},
   /*{path: 'perfil-e', component: PerfilFComponent},*/
-  {path: 'cadastrar-familia', component: CadastrarFamiliaComponent},
+  {path: 'cadastrar-familia', component: CadastrarFamiliaComponent}
   /*{path: 'cadastrar-empresa', component: CadastrarEmpresaComponent}*/
   
 ];
