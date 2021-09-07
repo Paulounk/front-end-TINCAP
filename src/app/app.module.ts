@@ -10,6 +10,7 @@ import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia
 import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MenuComponent } from './menu/menu.component';
     CadastrarFamiliaComponent,
     RodapeComponent,
     EntrarComponent,
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
