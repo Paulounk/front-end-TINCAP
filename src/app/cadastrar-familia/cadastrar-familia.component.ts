@@ -28,10 +28,6 @@ export class CadastrarFamiliaComponent implements OnInit {
     this.confirmarSenha = event.target.value
   }
 
-  tipoUser(event: any){
-    this.tipoUsuario = event.target.value
-  }
-
   cadastrar(){
     
     if(this.user.nomeCompleto.length < 5){
@@ -40,8 +36,6 @@ export class CadastrarFamiliaComponent implements OnInit {
     if(this.user.usuario.indexOf('@') == -1 || this.user.usuario.indexOf('.') == -1){
       alert('O usuário deve ser um email (e.g. usuario@usuario.com)')
     }
-   
-    this.user.tipo = this.tipoUsuario
 
     if(this.user.senha.length < 8){
       alert('A senha deve conter no mínimo 8 dígitos.')
