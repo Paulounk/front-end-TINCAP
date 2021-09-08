@@ -8,17 +8,20 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 import { RodapeComponent } from './rodape/rodape.component';
-/*import { EntrarComponent } from './entrar/entrar.component';*/
+import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
 
+import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastrarFamiliaComponent,
     RodapeComponent,
-    /*EntrarComponent,*/
-    MenuComponent
+    MenuComponent,
+    EntrarComponent,
+    MenuComponent,
+    CadastrarEmpresaComponent
   ],
   imports: [
     BrowserModule,
