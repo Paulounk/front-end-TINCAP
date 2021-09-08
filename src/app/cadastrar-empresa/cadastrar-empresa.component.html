@@ -14,38 +14,37 @@
                     <h1 class="text-center mb-4 text-color-size-title">Cadastro Empresarial</h1>
 
                     <div class="form-group">
-                        <label for="nomeEmpresa">Nome da Empresa</label>
-                        <input class="form-control" type="text" name="nomeEmpresa" id="nomeEmpresa"
-                            placeholder="Digite o nome da empresa">
+                        <label for="nome">Nome Completo</label>
+                        <input [(ngModel)]='user.nomeCompleto' class="form-control" type="text" name="nome" id="nome"
+                            placeholder="Digite seu nome completo">
                     </div>
 
                     <div class="form-group">
                         <label for="usuario">Usuário</label>
-                        <input class="form-control" type="text" name="usuario" id="usuario"
+                        <input [(ngModel)]='user.usuario' class="form-control" type="text" name="usuario" id="usuario"
                             placeholder="Digite seu usuario de acesso">
                     </div>
 
                     <div class="form-group">
                         <label for="foto">Link da Foto</label>
-                        <input class="form-control" type="text" name="foto" id="foto"
-                            placeholder="Link da sua foto">
+                        <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto">
                     </div>
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha"
+                        <input [(ngModel)]='user.senha' class="form-control" type="password" name="senha" id="senha"
                             placeholder="Digite sua senha">
                     </div>
 
                     <div class="form-group">
                         <label for="confirmarSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password"
+                        <input (input)='confirmeSenha($event)' class="form-control" type="password"
                             name="confirmarSenha" id="confirmarSenha" placeholder="Confirme sua senha">
                     </div>
-
+                    
                     <div class="d-flex justify-content-center mt-4 mb-0">
-                        <button type="submit" class="btn mr-4 btn-lg" routerLink='/entrar'>Cancelar</button>
-                        <button type="submit" class="btn" >Cadastrar</button>
+                        <button type="submit" class="btn btn-lg mr-4" routerLink='/entrar'>Cancelar</button>
+                        <button type="submit" class="btn" (click)='cadastrar()'>Cadastrar</button>
                     </div>
 
                 </div>
