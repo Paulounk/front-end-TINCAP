@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 import { RodapeComponent } from './rodape/rodape.component';
-//import { EntrarComponent } from './entrar/entrar.component';
+import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
@@ -18,7 +18,7 @@ import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa
     AppComponent,
     CadastrarFamiliaComponent,
     RodapeComponent,
-    //EntrarComponent,
+    EntrarComponent,
     MenuComponent,
     CadastrarEmpresaComponent
   ],

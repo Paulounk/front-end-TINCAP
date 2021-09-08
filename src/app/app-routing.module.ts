@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
 import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
+import { EntrarComponent } from './entrar/entrar.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'cadastrar-empresa', pathMatch: 'full'},
-  /* {path: 'entrar', component: EntrarComponent},*/
+  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+   {path: 'entrar', component: EntrarComponent},
   /*{path: 'perfil-f', component: PerfilEComponent},*/
   /*{path: 'perfil-e', component: PerfilFComponent},*/
   {path: 'cadastrar-familia', component: CadastrarFamiliaComponent},
