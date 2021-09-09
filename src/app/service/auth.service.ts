@@ -22,6 +22,14 @@ export class AuthService {
     return this.http.post<Usuario>("https://tincap.herokuapp.com/usuario/cadastrar", usuario)
   }
 
+  alterar(user: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>("https://blogjosearaujo.herokuapp.com/usuarios/alterar", user)
+  }
+
+  getByIdUser(id: number): Observable<Usuario>{
+    return this.http.get<Usuario>(`https://blogjosearaujo.herokuapp.com/usuarios/${id}`)
+  }
+
   logado(){
     let ok: boolean = false
 

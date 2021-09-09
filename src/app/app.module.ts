@@ -14,6 +14,11 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
+import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa
     MenuComponent,
     EntrarComponent,
     MenuComponent,
-    CadastrarEmpresaComponent
+    CadastrarEmpresaComponent,
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent,
+    PostagemDeleteComponent,
+    PostagemEditComponent
   ],
   imports: [
     BrowserModule,
