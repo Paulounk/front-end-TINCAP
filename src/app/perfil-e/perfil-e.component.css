@@ -33,7 +33,7 @@ header {
     }*/
     #menu li a {
         text-decoration: none;
-        color:rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
     }
     #menu li a:hover {
         color:rgb(255, 196, 0);
@@ -58,7 +58,7 @@ header {
 /*COLUNA 1*/
     .box{
         border-radius: 8px;
-        background-color: #ffffff;
+        background-color: rgba(242, 155, 0, 0.35);
         /* background-image: linear-gradient(180deg, #f6d365 0%, #fd9f858f 100%);*/
         padding: 50px;
         height: 600px;
@@ -79,13 +79,14 @@ header {
         height: 304px;
     }
     button{
-        font-size: 11pt;
-        color: rgb(255, 255, 255);
+        font-size: 13pt !important;
+        color: rgb(0, 0, 0) !important;
         /*background-image: linear-gradient(180deg, #f6d365 0%, #fd9f858f 100%);*/
-        background-color: orange;
-        width: 17%;
-        height: 80%;
-        border-radius: 15px; 
+        background-color: orange !important;
+        width: 20% !important;
+        border-radius: 0px !important; 
+        display: flex;
+        justify-content: center;
     }
 /*Customização do button*/
     .btn-custom {
@@ -128,7 +129,11 @@ header {
     .cardtitulo{
         color: rgb(255, 123, 0) ;
     }
-/*Raio da borda do pesquisar*/
+    /*Titulos laranja -card*/
+    .cardtitulou{
+        color: rgb(10, 10, 10) ;
+    }
+/*Raio da borda do pesquisar
     .rounded-right{
         border-radius: 20px;
-    }
+    }*/
