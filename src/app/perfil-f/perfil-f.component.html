@@ -1,32 +1,23 @@
 <header>
     <!--MENU-->
     <nav class="navbar navbar-expand-lg navbar navbar-light navbart">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <!--TINCAP-->
         <div class="logo">
             <a href=""><img src="https://i.imgur.com/bGMTXRf.png" alt=""></a>
         </div>
         <div class="collapse navbar-collapse " id="conteudoNavbarSuportado" id="menu">
-                <!---- <li class="nav-item mr-auto d-flex align-items-center fs-20">
-                <p class="m-0 font-weight-bold text-black"> <a href="perfil-e.html"> TINCAP</a></p>
-                </li> -->
-                <!--Pesquisar-->
-                <!-- <ul class="navbar-nav m-auto d-flex align-items-center pr-5">
-                <form class="d-flex">
-                <input class="form-controlm m-auto mr-sm-1 sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-warning font-weight-bold me-3 fs-12" type="submit">Pesquisar</button>
-                </form>
-                </ul> -->
-            <div class="input-group d-flex justify-content-center">
-                <input class="form-controln py-2 border-right-0 border rounded-right" type="search" value="Pesquisar no TINCAP" id="example-search-input" style="width: 360px; height:30px">
-                <span class="input-group-append">
-                    <button class="btn btn-custom" type="submit"><i class="fa fa-search"></i></button>
-                </span>
-            </div>
-            <!--Link configurações-->
-            <ul class="navbar-nav ml-2" id="menu">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control form-control-pesquisar mr-sm-2 form-control-alinhamento" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <!--Link configurações-->
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" id="menu">
+            <ul class="navbar-nav ml-auto" id="menu">
                 <li class="nav-item mr-sm-2">
                     <p class="m-0 font-weight-bold text-black"> <a href="cadastrar.html">Configurações</a></p>
                 </li>
@@ -41,131 +32,154 @@
     </nav>
 </header>
 
-<body class="fundo">
-        <br>
+<div class="container-fluid fundo">
+    <div class="row">
         <!--coluna 1-->
-    <div class="container">
-        <div class="row align-items-start pr-5">
-            <div class="col-3 m-2 mp box">
-                <img src="https://i.imgur.com/rVQQ1m1.jpg" alt="Foto perfil" width="100px" height="100px" class="img-fluid rounded-circle m-auto d-flex align-items-center">
-                <br>
-                <p class="font-weight-bold text-black m-auto center cardtitulo">Nome do usuário</p> 
-                <hr mt-5 mb-5>
-                <p> Data nascimento: </p> 
-                <p>CPF: </p>
-                <P>Dependentes: </P>
-                <p>Tipo de moradia: </p>
-            </div>
-        
-    
-
-            <!--coluna 2-->
-            <div class="col-6 m-2 mp boxw">
-                <p class="font-weight-bold text-black center fs-20 cardtitulo">Seja bem vinde! Feed de notícias</p>
-                <hr> 
-              <div class="row d-flex justify-content-center mt-3 mb-5">
-                <div class="modal-content colorr">
-                    <div class="modal-body">
-                          <div class="form-group ">
-                        <label for="titulo">Título</label>
-                        <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
-                        </div> 
-                        <div class="form-group">
-                            <label for="texto">Texto</label>
-                            <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="texto">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
-                            <select name="tema" id="tema" class="form-control">
-                                <option value="">Temas</option>
-                            </select>
-                        </div>
-                    </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger d-flex align-items-center center" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-success d-flex align-items-center center">Publicar</button>
-                        </div>
-                </div> 
-              </div> 
-            </div> 
-            <!-- Modal -->
-            <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <label for="titulo">Título</label>
-                      <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
-                    </div>
-            
-                    <div class="form-group">
-                      <label for="texto">Texto</label>
-                      <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
-                    </div>
-            
-                    <div class="form-group">
-                      <label for="texto">Escolha um tema ou <a href="">cadastre um novo</a>: </label>
-                      <select name="tema" id="tema" class="form-control">
-                        <option value="">Temas</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Publicar</button>
-                  </div>
+        <div class="col-md-3">
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-md-10 box">
+                    <img src="{{foto}}" alt="Foto perfil" class="img-fluid rounded-circle img-perfil">
+                    <br>
+                    <p class="font-weight-bold text-black mt-3 mb-3 text-center">{{nome}}</p>
+                    <hr mt-5 mb-5>
+                    <p> Data nascimento: </p> 
+                    <p>CPF: </p>
+                    <P>Dependentes: </P>
+                    <p>Tipo de moradia: </p>
                 </div>
-              </div>
             </div>
-            
-        <!--  <div class="col-md-6">
-                    <p class="hcukyx3x oygrvhab cxmmr5t8 kvgmc6g5"><span data-outline-text="true">⁠<br></span></p> -->
-                    <!--foto/video postar
-                    <div class="pybr56ya dati1w0a hv4rvrfc osnr6wyh lhclo0ds j83agx80 bp9cbjyn" role="region">
-                        <div class="l9j0dhe7">
-                            <div class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s" data-visualcompletion="ignore"></div>
-                            <input type="file" accept="image/*,image/heif,image/heic,video/*,video/mp4,video/x-m4v,video/x-matroska,.mkv" class="mkhogb32" multiple="">
-                                <div class="oajrlxb2 bp9cbjyn g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 j83agx80 rj1gh0hx btwxx1t3 g5gj957u p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo idt9hxom cxgpxx05 dflh9lhu sj5x9vvc scb9dxdr l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb lzcic4wl abiwlrkh p8dawk7l ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi buofh1pr taijpn5t" role="button" tabindex="0">
-                                    <div class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s rnr61an3" data-visualcompletion="ignore"></div>
-                                </div>
-                        </div>
-                    </div>
-                </div>-->
-            
-            <!--coluna 3-->
-            <div class="col-2 m-2">
-                <!--CARD 1-->
-                <div class="card m-auto d-flex align-items-center">
-                    <div class="card-header">Destaque</div>
-                    <div class="card-body card">
-                        <h5 class="card-title m-auto align-items-center cardtitulo">Bolsa Família</h5>
-                        <p class="card-text center">Governo envia ao Congresso Orçamento de 2022 sem reajuste no Bolsa Família</p>
-                        <a href="https://oglobo.globo.com/economia/governo-envia-ao-congresso-orcamento-de-2022-sem-reajuste-no-bolsa-familia-25178554" target="_blank" class="btn btn-warning">Visitar</a>
-                    </div>
-                    <div class="card-footer text-muted">2 dias atrás</div>
-                </div>
-                <br>
-                <br>
-                        <!--CARD 2-->
-                        <div class="card m-auto align-items-center">
-                            <div class="card-header">Destaque</div>
-                            <div class="card-body card">
-                                <h5 class="card-title m-auto align-items-center cardtitulo">Auxilio Emergencial</h5>
-                                <p class="card-text center">Veja calendários da 6ª e da 7ª parcelas</p>
-                                <a href="https://www.istoedinheiro.com.br/auxilio-emergencial-veja-calendarios-da-6a-e-da-7a-parcelas/" target="_blank" class="btn btn-warning">Visitar</a>
+        </div>
+
+    <!--coluna 2-->
+
+        <div class="col-md-6 mt-5 d-flex justify-content-center">
+            <div class="col-md-12">
+                <p class="text-center font-size-feed cardtitulo">Feed de notícias</p>
+                <hr>
+                <div class="row d-flex justify-content-center mt-3 mb-5">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="titulo">Título</label>
+                                <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
+                                placeholder="Digite o título">
                             </div>
-                                <div class="card-footer text-muted">1 dias atrás</div>
+                            <div class="form-group">
+                                <label for="texto">Texto</label>
+                                <textarea [(ngModel)]='postagem.conteudo' class="form-control" name="texto" id="texto"
+                                rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="texto">Escolha um tema ou <a routerLink='/tema'>cadastre um novo</a>: </label>
+                                <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
+                                    <option *ngFor='let item of listaTemas' value="{{item.id}}">
+                                        {{item.descricao}}
+                                    </option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--###-->
+                <div class="container mb-5 mt-5 pl-0 ml-0" id='postagens'>
+                    <nav>
+                        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab"
+                            data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
+                            aria-selected="true">Todas as Postagens</a>
+                            <a (click)='findByIdUser()' class="nav-item nav-link text-secondary font-weight-bold"
+                            id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
+                            aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
+                            Postagens</a>
+                            <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
+                            href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por
+                            Tema</a>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content mt-5" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+                            aria-labelledby="nav-todasPostagens-tab">
+                            <div class="card-columns">
+                                <div class="card text-center card-postagem" *ngFor='let item of listaPostagens'>
+                                    <div class="card-body p-5">
+                                        <h5 class="card-title m-0">{{item.titulo}}</h5>
+                                        <small class="text-muted">Tema: {{item.tema.descricao}}</small>
+                                        <p class="card-text mt-3">{{item.conteudo}}</p>
+                                        <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data
+                                        | date: 'HH:mm'}} </small></p>
+                                        <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+                            <div class="card-columns">
+                                <div class="card text-center card-postagem" *ngFor='let item of user.postagem'>
+                                    <div class="card-body">
+                                        <h5 class="card-title m-0">{{item.titulo}}</h5>
+                                        <small class="text-muted">Tema: {{item.tema.descricao}}</small>
+                                        <p class="card-text mt-3">{{item.conteudo}}</p>
+                                        <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data
+                                        | date: 'HH:mm'}} </small></p>
+                                        <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                                        <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+                            <div class="card-columns" *ngFor='let tema of listaTemas'>
+                                <div class="card text-center card-postagem" *ngFor='let item of tema.postagem'>
+                                    <div class="card-body">
+                                        <h5 class="card-title m-0">{{item.titulo}}</h5>
+                                        <p class="card-text mt-3">{{item.conteudo}}</p>
+                                        <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data
+                                        | date: 'HH:mm'}} </small></p>
+                                        <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-  </div>   
+        </div>
+        <!--#############################################################-->
+
+        <!--coluna 3-->
+            <div class="col-md-3">
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-md-11">
+                        <!--CARD 1-->
+                            <div class="card">
+                                <div class="card-header text-center">Destaque</div>
+                                    <div class="card-body card">
+                                        <h5 class="card-title text-center">Bolsa Família</h5>
+                                        <p class="card-text center">Governo envia ao Congresso Orçamento de 2022 sem reajuste no Bolsa Família</p>
+                                        <a href="https://oglobo.globo.com/economia/governo-envia-ao-congresso-orcamento-de-2022-sem-reajuste-no-bolsa-familia-25178554"
+                                        target="_blank" class="btn btn-warning">Visitar</a>
+                                    </div>
+                                    <div class="card-footer text-center">2 dias atrás</div>
+                                </div>
+                                    <!--CARD 2-->
+                                    <div class="card mt-5">
+                                        <div class="card-header text-center">Destaque</div>
+                                        <div class="card-body card">
+                                            <h5 class="card-title text-center">Auxilio Emergencial</h5>
+                                            <p class="card-text center">Veja calendários da 6ª e da 7ª parcelas</p>
+                                            <a href="https://www.istoedinheiro.com.br/auxilio-emergencial-veja-calendarios-da-6a-e-da-7a-parcelas/"
+                                            target="_blank" class="btn btn-warning">Visitar</a>
+                                        </div>
+                                        <div class="card-footer text-center">1 dias atrás</div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>

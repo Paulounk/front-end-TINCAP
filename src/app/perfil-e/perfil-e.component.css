@@ -67,8 +67,8 @@ header {
 }
 
 .card-columns{
-   display: inline;
-   flex-direction: column;
+    display: inline;
+    flex-direction: column;
 }
 
 .card-postagem{
