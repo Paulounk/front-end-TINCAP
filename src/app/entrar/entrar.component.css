@@ -47,6 +47,7 @@ button{
   background-color: orange;
   width: 30%;
 }
+
 .form-control:focus {
   border-color: #ffffff;
   box-shadow: 0 0 15px #696666;

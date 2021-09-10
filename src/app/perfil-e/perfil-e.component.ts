@@ -17,11 +17,11 @@ export class PerfilEComponent implements OnInit {
 
   nome = environment.nome
   foto = environment.foto
-  id = environment.id
 
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
-
+  tituloPostagem: string
+ 
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
@@ -66,6 +66,18 @@ export class PerfilEComponent implements OnInit {
       this.listaPostagens = resp
     })
   }
+
+  findByTituloPostagem(){
+
+    if(this.tituloPostagem == ''){
+      this.getAllPostagens()
+    }
+
+    this.postagemService.getByTituloPostagem(this.tituloPostagem).subscribe((resp: Postagem[]) => {
+      this.listaPostagens = resp
+    })
+  }
+
 
   findByIdUser(){
     this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {

@@ -7,13 +7,12 @@
 }
 
 header {
-    background: rgba(39, 39, 39, 0.096);
+    background: rgba(26, 26, 26, 0.9);
 }
 
 #menu li a {
     text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
 
 .logo {
@@ -46,7 +45,7 @@ header {
 
 .form-control:focus {
     border-color: rgb(255, 149, 11);
-    box-shadow: 0 0 10px rgb(255, 149, 11);
+    box-shadow: 0 0 10px rgb(255, 167, 51);
 }
 
 .form-control-alinhamento{
