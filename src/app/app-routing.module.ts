@@ -1,4 +1,3 @@
-import { EventHandlerVars } from '@angular/compiler/src/compiler_util/expression_converter';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
@@ -14,7 +13,7 @@ import { TemaComponent } from './tema/tema.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'perfil-e', pathMatch: 'full'},
+  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
   {path: 'entrar', component: EntrarComponent},
   {path: 'perfil-f', component: PerfilFComponent},
   {path: 'perfil-e', component: PerfilEComponent},

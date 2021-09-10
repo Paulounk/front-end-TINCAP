@@ -10,25 +10,15 @@
       <a href=""><img src="https://i.imgur.com/bGMTXRf.png" alt=""></a>
     </div>
     <div class="collapse navbar-collapse " id="conteudoNavbarSuportado" id="menu">
-      <!---- <li class="nav-item mr-auto d-flex align-items-center fs-20">
-                <p class="m-0 font-weight-bold text-black"> <a href="perfil-e.html"> TINCAP</a></p>
-                </li> -->
-      <!--Pesquisar-->
-      <!-- <ul class="navbar-nav m-auto d-flex align-items-center pr-5">
-                <form class="d-flex">
-                <input class="form-controlm m-auto mr-sm-1 sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-warning font-weight-bold me-3 fs-12" type="submit">Pesquisar</button>
-                </form>
-                </ul> -->
-      <div class="input-group d-flex justify-content-center">
-        <input class="form-controln py-2 border-right-0 border rounded-right" type="search" value="Pesquisar no TINCAP"
-          id="example-search-input" style="width: 360px; height:30px">
-        <span class="input-group-append">
-          <button class="btn btn-custom" type="submit"><i class="fa fa-search"></i></button>
-        </span>
-      </div>
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control form-control-pesquisar mr-sm-2 form-control-alinhamento" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+  
       <!--Link configurações-->
-      <ul class="navbar-nav ml-2" id="menu">
+    </div>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" id="menu">
+      <ul class="navbar-nav ml-auto" id="menu">
         <li class="nav-item mr-sm-2">
           <p class="m-0 font-weight-bold text-black"> <a href="cadastrar.html">Configurações</a></p>
         </li>
@@ -51,15 +41,14 @@
     <div class="col-md-3">
       <div class="row mt-5 d-flex justify-content-center">
         <div class="col-md-10 box">
-          <img src="https://i.imgur.com/rVQQ1m1.jpg" alt="Foto perfil" width="100px" height="100px"
-            class="img-fluid rounded-circle m-auto d-flex align-items-center">
+          <img src="{{foto}}" alt="Foto perfil" class="img-fluid rounded-circle img-perfil">
           <br>
-          <p class="font-weight-bold text-black m-auto text-center">Nome empresa</p>
+          <p class="font-weight-bold text-black mt-3 mb-3 text-center">{{nome}}</p>
           <hr mt-5 mb-5>
-          <p>CNPJ: </p>
-          <P>Familias ajudadas: </P>
-          <p>Tipo de doação: </p>
-          <p>Descrição:</p>
+          <p class="text-black">CNPJ: </p>
+          <P class="text-black">Familias ajudadas: </P>
+          <p class="text-black">Tipo de doação: </p>
+          <p class="text-black">Descrição:</p>
         </div>
       </div>
     </div>
@@ -68,27 +57,29 @@
 
     <div class="col-md-6 mt-5 d-flex justify-content-center">
       <div class="col-md-12">
-        <p class="font-weight-bold text-center fs-20 cardtitulo">Seja bem vindo(a)! Feed de notícias</p>
+        <p class="text-center font-size-feed cardtitulo">Feed de notícias</p>
         <hr>
         <div class="row d-flex justify-content-center mt-3 mb-5">
-          <div class="modal-content colorr">
+          <div class="modal-content">
             <div class="modal-body">
               <div class="form-group">
                 <label for="titulo">Título</label>
-                <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
+                  placeholder="Digite o título">
               </div>
               <div class="form-group">
                 <label for="texto">Texto</label>
-                <textarea [(ngModel)]='postagem.conteudo' class="form-control" name="texto" id="texto" rows="3"></textarea>
+                <textarea [(ngModel)]='postagem.conteudo' class="form-control" name="texto" id="texto"
+                  rows="3"></textarea>
               </div>
 
               <div class="form-group">
                 <label for="texto">Escolha um tema ou <a routerLink='/tema'>cadastre um novo</a>: </label>
                 <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
                   <option *ngFor='let item of listaTemas' value="{{item.id}}">
-                      {{item.descricao}}
+                    {{item.descricao}}
                   </option>
-              </select>
+                </select>
               </div>
             </div>
 
@@ -97,9 +88,9 @@
             </div>
           </div>
         </div>
-        
+
         <!--###-->
-        <div class="container mb-5 mt-5" id='postagens'>
+        <div class="container mb-5 mt-5 pl-0 ml-0" id='postagens'>
           <nav>
             <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab"
@@ -122,8 +113,8 @@
               aria-labelledby="nav-todasPostagens-tab">
 
               <div class="card-columns">
-                <div class="card text-center" *ngFor='let item of listaPostagens'>
-                  <div class="card-body">
+                <div class="card text-center card-postagem" *ngFor='let item of listaPostagens'>
+                  <div class="card-body p-5">
                     <h5 class="card-title m-0">{{item.titulo}}</h5>
                     <small class="text-muted">Tema: {{item.tema.descricao}}</small>
                     <p class="card-text mt-3">{{item.conteudo}}</p>
@@ -139,7 +130,7 @@
             <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
               <div class="card-columns">
-                <div class="card text-center" *ngFor='let item of user.postagem'>
+                <div class="card text-center card-postagem" *ngFor='let item of user.postagem'>
                   <div class="card-body">
                     <h5 class="card-title m-0">{{item.titulo}}</h5>
                     <small class="text-muted">Tema: {{item.tema.descricao}}</small>
@@ -157,7 +148,7 @@
 
             <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
               <div class="card-columns" *ngFor='let tema of listaTemas'>
-                <div class="card text-center" *ngFor='let item of tema.postagem'>
+                <div class="card text-center card-postagem" *ngFor='let item of tema.postagem'>
                   <div class="card-body">
                     <h5 class="card-title m-0">{{item.titulo}}</h5>
                     <p class="card-text mt-3">{{item.conteudo}}</p>

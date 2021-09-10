@@ -2,8 +2,8 @@
     font-size: 12px;
 }
 
-.fs-20{
-    font-size: 20px;
+.font-size-feed{
+    font-size: 25px;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 .fundo{
-    background-image: url(https://i.imgur.com/vNi9UhE.jpg);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
 
     background-position: center;
@@ -49,10 +49,32 @@ header {
     box-shadow: 0 0 10px rgb(255, 149, 11);
 }
 
+.form-control-alinhamento{
+    justify-content: end;
+}
+
 .cardtitulo{
-    color: rgb(255, 123, 0) ;
+    color: rgb(255, 123, 0);
 }
 
 .card{
     width: 315px;
+}
+
+.img-perfil{
+    width: 300px !important;
+    height: auto;
+}
+
+.card-columns{
+   display: inline;
+   flex-direction: column;
+}
+
+.card-postagem{
+    width: 700px;
+}
+
+.form-control-pesquisar{
+    width: 425px;
 }

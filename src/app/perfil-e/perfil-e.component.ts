@@ -15,6 +15,10 @@ import { TemaService } from '../service/tema.service';
 })
 export class PerfilEComponent implements OnInit {
 
+  nome = environment.nome
+  foto = environment.foto
+  id = environment.id
+
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
 
@@ -35,10 +39,10 @@ export class PerfilEComponent implements OnInit {
   ngOnInit(){
     window.scroll(0, 0)
 
-    if(environment.token == ''){
+   /* if(environment.token == ''){
       //alert('Sua sessão expirou, faça login novamente.')
       //this.router.navigate(['/entrar'])
-    }
+    }*/
 
     this.getAllTemas()
     this.getAllPostagens()

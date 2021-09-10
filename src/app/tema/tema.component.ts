@@ -20,10 +20,10 @@ export class TemaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if (environment.token == '') {
-      //alert('Sua sessão expirou, faça login novamente.')
-      //this.router.navigate(['/entrar'])
-    }
+    /*if (environment.token == '') {
+      alert('Sua sessão expirou, faça login novamente.')
+      this.router.navigate(['/entrar'])
+    }*/
  
     this.findAllTemas()
   }
