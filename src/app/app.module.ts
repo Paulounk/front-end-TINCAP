@@ -12,6 +12,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa
     RodapeComponent,
     EntrarComponent,
     MenuComponent,
-    CadastrarEmpresaComponent
+    CadastrarEmpresaComponent,
+    UsuarioEditComponent
   ],
   imports: [
     BrowserModule,
