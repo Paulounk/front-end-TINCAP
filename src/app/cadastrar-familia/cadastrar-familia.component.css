@@ -37,7 +37,6 @@ button{
     background-color: orange;
     width: 30%;
 }
-
 /*Cor das bordas e da sombra do form*/
 .form-control:focus {
     border-color: #ffffff;

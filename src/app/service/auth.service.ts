@@ -23,11 +23,11 @@ export class AuthService {
   }
 
   alterar(user: Usuario): Observable<Usuario>{
-    return this.http.put<Usuario>("https://blogjosearaujo.herokuapp.com/usuarios/alterar", user)
+    return this.http.put<Usuario>("https://tincap.herokuapp.com/usuario/alterar", user)
   }
 
   getByIdUser(id: number): Observable<Usuario>{
-    return this.http.get<Usuario>(`https://blogjosearaujo.herokuapp.com/usuarios/${id}`)
+    return this.http.get<Usuario>(`https://tincap.herokuapp.com/usuario/${id}`)
   }
 
   logado(){
