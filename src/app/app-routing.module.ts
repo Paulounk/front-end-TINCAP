@@ -1,17 +1,15 @@
 import { EventHandlerVars } from '@angular/compiler/src/compiler_util/expression_converter';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   /*{path: 'perfil-f', component: PerfilEComponent},*/
-  {path: 'entrar', component: EntrarComponent},
+  /*{path: 'entrar', component: EntrarComponent},*/
   /*{path: 'perfil-e', component: PerfilFComponent},*/
-  {path: 'cadastrar-familia', component: CadastrarFamiliaComponent}
+  /*{path: 'cadastrar-familia', component: CadastrarFamiliaComponent}*/
   /*{path: 'cadastrar-empresa', component: CadastrarEmpresaComponent}*/
   
 ];

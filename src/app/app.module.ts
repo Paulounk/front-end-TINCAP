@@ -6,9 +6,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 
@@ -16,9 +14,7 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarFamiliaComponent,
     RodapeComponent,
-    EntrarComponent,
     MenuComponent,
     HomeComponent
   ],
