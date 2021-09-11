@@ -46,6 +46,7 @@
                     <p>CPF: </p>
                     <P>Dependentes: </P>
                     <p>Tipo de moradia: </p>
+                    
                 </div>
             </div>
         </div>
@@ -107,12 +108,25 @@
                             <div class="card-columns">
                                 <div class="card text-center card-postagem" *ngFor='let item of listaPostagens'>
                                     <div class="card-body p-5">
+                                        <div class="ppostagem text-nowrap">
+                                            <p class="card-text">
+                                                <img src="{{foto}}" alt="foto" class="img-fluid rounded-circle img-perfil">
+                                                <small class="text-muted ml-2">{{item.usuario.nomeCompleto}}</small>
+                                            </p>
+                                        </div>
                                         <h5 class="card-title m-0">{{item.titulo}}</h5>
                                         <small class="text-muted">Tema: {{item.tema.descricao}}</small>
                                         <p class="card-text mt-3">{{item.conteudo}}</p>
                                         <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data
-                                        | date: 'HH:mm'}} </small></p>
-                                        <p class="card-text"><small class="text-muted">by: {{item.usuario.nomeCompleto}}</small></p>
+                                            | date: 'HH:mm'}} </small></p>
+                                            <!--LIKE APOIE ARRUMAR-->
+                                            <button type="button" class="btn apoie apoiei contador" id="btn_incrementar">
+                                                Apoie <span class="badge badge-light cardtitulo" id="contador"></span>
+                                                <span class="sr-only">Mensagens não lidas</span>
+                                            </button>
+                                            <script src="script.js"></script>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
