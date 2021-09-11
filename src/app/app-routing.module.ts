@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'sobre', component: HomeComponent},
   /*{path: 'perfil-f', component: PerfilEComponent},*/
   /*{path: 'entrar', component: EntrarComponent},*/
   /*{path: 'perfil-e', component: PerfilFComponent},*/

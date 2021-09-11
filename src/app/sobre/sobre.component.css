@@ -1,0 +1,48 @@
+@keyframes slide {
+    from { 
+        transform: translateX(43vw);
+    }
+    to { 
+        transform: translateX(0);
+    }
+  }
+  
+  .bg-sobre{
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+  }
+  
+  .titulo-home{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fba505;
+  }
+  
+  p{
+    font-size: 25px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  /* -------------------------------------------------------------------------- */
+  /*             INICIO DA ESTILIZAÇÃO DA HOME-PAGE - TERCEIRA DOBRA            */
+  /* -------------------------------------------------------------------------- */
+  .card-text{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  .bg-equipe{
+    background-image: url('https://i.imgur.com/GgeiHNX.png');
+    background-size:cover;
+    background-position: center;
+  }
+  
+  .titulo-equipe{
+    color: orange;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+  }
