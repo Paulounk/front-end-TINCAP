@@ -182,6 +182,7 @@ header {
   position: absolute;
   z-index: 100;
   top: 30%;
+  margin-left: 4%;
 }
   
 .conteudo h2 {
@@ -189,6 +190,5 @@ header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50pt;
   letter-spacing: 2px;
-  margin-left: 8%;
   margin-bottom: 10px;
 }
