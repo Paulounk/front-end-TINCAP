@@ -38,21 +38,30 @@ export class EntrarComponent implements OnInit {
 #####################*/
 
   entrar() {
-    this.auth.entrar(this.userLogin).subscribe((resp: UsuarioLogin) => {
-    this.userLogin = resp
+    
+      this.auth.entrar(this.userLogin).subscribe((resp: UsuarioLogin) => {
+        this.userLogin = resp
+    
+        environment.token = this.userLogin.token
+        environment.nome = this.userLogin.nome
+        environment.id = this.userLogin.id
+        environment.foto = this.userLogin.foto
+        environment.tipo = this.userLogin.tipo
+        
+        if(environment.tipo == 'empresa'){
+          this.router.navigate(['/perfil-e'])
+        }else{ 
+          this.router.navigate(['/perfil-f'])
+        }
+        
+        }, erro =>{
+          if(erro.status == 500){
+            alert('Usuário ou senha estão incorretos!')
+          }
+        }) 
+    
 
-    environment.token = this.userLogin.token
-    environment.nome = this.userLogin.nome
-    environment.id = this.userLogin.id
-    environment.foto = this.userLogin.foto
-    environment.tipo = this.userLogin.tipo
-
-    this.router.navigate(['/perfil-e'])
-    }, erro =>{
-      if(erro.status == 500){
-        alert('Usuário ou senha estão incorretos!')
-      }
-    })
+   
   }
 
 }

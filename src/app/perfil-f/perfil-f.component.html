@@ -7,25 +7,25 @@
         </button>
         <!--TINCAP-->
         <div class="logo">
-            <a href=""><img src="https://i.imgur.com/bGMTXRf.png" alt=""></a>
+            <a href=""><img src="https://i.imgur.com/GjU7CR4.png" alt=""></a>
         </div>
         <div class="collapse navbar-collapse " id="conteudoNavbarSuportado" id="menu">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control form-control-pesquisar mr-sm-2 form-control-alinhamento" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-warning my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+                <input [(ngModel)] = 'tituloPostagem' name="search" class="form-control form-control-pesquisar mr-sm-2 form-control-alinhamento" type="search" placeholder="Pesquisar uma postagem" aria-label="Pesquisar">
+                <button class="btn btn-warning my-2 my-sm-0" type="button" (click)='findByTituloPostagem()'>Pesquisar</button>
+              </form>
         </div>
         <!--Link configurações-->
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" id="menu">
             <ul class="navbar-nav ml-auto" id="menu">
                 <li class="nav-item mr-sm-2">
-                    <p class="m-0 font-weight-bold text-black"> <a href="cadastrar.html">Configurações</a></p>
+                    <p class="m-0 text-white"> <a href="cadastrar.html">Configurações</a></p>
                 </li>
             </ul>
             <!--sair-->
             <ul class="navbar-nav ml-9" id="menu">
                 <li class="nav-item ml-auto">
-                    <p class="m-0 font-weight-bold text-black"> <a href="entrar.html"> Sair</a></p>
+                    <p class="m-0 text-white"> <a href="entrar.html"> Sair</a></p>
                 </li>
             </ul>
         </div>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
+                            <button type="button" class="btn btn-warning" (click)='publicar()' data-dismiss="modal">Publicar</button>
                         </div>
                     </div>
                 </div>

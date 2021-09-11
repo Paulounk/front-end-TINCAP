@@ -15,6 +15,11 @@ header {
     color:white;
 }
 
+#menu li a:hover {
+    text-decoration: none;
+    color:rgb(255, 149, 11);
+}
+
 .logo {
     margin-left: 5%;
     padding: 10px;
