@@ -15,8 +15,4 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
   }
 
-saibaMais(){
-    this.route.navigate(['/sobre'])
-  }
-
 }
