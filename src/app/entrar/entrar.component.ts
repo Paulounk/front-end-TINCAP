@@ -11,32 +11,48 @@ import { AuthService } from '../service/auth.service';
 })
 export class EntrarComponent implements OnInit {
 
-    userLogin: UsuarioLogin = new UsuarioLogin()
+  userLogin: UsuarioLogin = new UsuarioLogin()
 
-    constructor(
-      private auth: AuthService,
-      private router: Router
-    ) { }
+  constructor(
+    private auth: AuthService,
+    private router: Router
+  ) { }
   
-    ngOnInit() {
-      window.scroll(0, 0)
+  ngOnInit() {
+    window.scroll(0, 0)
+  }
+/*#####################
+  tipoUserEmpresa(){
+    if(this.userLogin.tipo != ''){
+      environment.tipo = 'empresa'
     }
-  
-    entrar() {
-      this.auth.entrar(this.userLogin).subscribe((resp: UsuarioLogin) => {
-      this.userLogin = resp
-  
-      environment.token = this.userLogin.token
-      environment.nome = this.userLogin.nome
-      environment.id = this.userLogin.id
-      environment.foto = this.userLogin.foto
-  
-      this.router.navigate(['/perfil-e'])
-      }, erro =>{
-        if(erro.status == 500){
-          alert('Usuário ou senha estão incorretos!')
-        }
-      })
+    
+  }
+
+  tipoUserFamilia(){
+    if(this.userLogin.tipo != ''){
+      environment.tipo = 'familia'
     }
+
+  }
+#####################*/
+
+  entrar() {
+    this.auth.entrar(this.userLogin).subscribe((resp: UsuarioLogin) => {
+    this.userLogin = resp
+
+    environment.token = this.userLogin.token
+    environment.nome = this.userLogin.nome
+    environment.id = this.userLogin.id
+    environment.foto = this.userLogin.foto
+    environment.tipo = this.userLogin.tipo
+
+    this.router.navigate(['/perfil-e'])
+    }, erro =>{
+      if(erro.status == 500){
+        alert('Usuário ou senha estão incorretos!')
+      }
+    })
+  }
 
 }

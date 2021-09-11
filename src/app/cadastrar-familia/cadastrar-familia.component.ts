@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 
@@ -12,7 +13,6 @@ export class CadastrarFamiliaComponent implements OnInit {
 
   user: Usuario = new Usuario()
   confirmarSenha: string
-  tipoUsuario: string
 
   constructor(
     private authService: AuthService,
@@ -29,6 +29,7 @@ export class CadastrarFamiliaComponent implements OnInit {
   }
 
   cadastrar(){
+    this.user.tipo = 'familia'
     
     if(this.user.nomeCompleto.length < 5){
       alert('O usuário deve conter no mínimo 5 caracteres.')

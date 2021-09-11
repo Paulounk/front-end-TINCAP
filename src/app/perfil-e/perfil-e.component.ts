@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
 import { Usuario } from '../model/Usuario';
+import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
@@ -15,8 +16,10 @@ import { TemaService } from '../service/tema.service';
 })
 export class PerfilEComponent implements OnInit {
 
+
   nome = environment.nome
   foto = environment.foto
+  tipo = environment.tipo
 
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
