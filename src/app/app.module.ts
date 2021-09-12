@@ -6,21 +6,24 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
+import { EntrarComponent } from './entrar/entrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarFamiliaComponent,
     RodapeComponent,
     EntrarComponent,
     MenuComponent,
-    CadastrarEmpresaComponent
+    CadastrarEmpresaComponent,
+    MenuComponent,
+    HomeComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
