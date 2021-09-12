@@ -6,10 +6,6 @@
     font-size: 25px;
 }
 
-header {
-    background: rgba(26, 26, 26, 0.9);
-}
-
 #menu li a {
     text-decoration: none;
     color:white;
@@ -32,12 +28,7 @@ header {
 }
 
 .fundo{
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.411);
 }
 
 .box{
@@ -46,6 +37,23 @@ header {
     background-color: rgba(242, 155, 0, 0.35);
     padding: 50px;
     height: 700px;
+}
+
+/*Raio das bordas do form*/
+.form-control{
+    background-color: white;
+    font-size: 12pt;
+    border-color: rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+/*Alterações do placeholder*/
+input::placeholder {
+    color: rgba(0, 0, 0, 0.2)
+} 
+
+.form-group{
+    margin-bottom: 10px;
 }
 
 .form-control:focus {
@@ -58,11 +66,7 @@ header {
 }
 
 .cardtitulo{
-    color: rgb(255, 123, 0);
-}
-
-.card{
-    width: 315px;
+    color: black;
 }
 
 .img-perfil{
@@ -70,15 +74,23 @@ header {
     height: auto;
 }
 
+.form-control-pesquisar{
+    width: 350px !important;
+}
+
 .card-columns{
     display: inline;
     flex-direction: column;
 }
 
-.card-postagem{
-    width: 700px;
+.card{
+    display: flex;
+    width: auto;
 }
 
-.form-control-pesquisar{
-    width: 425px;
+/*Cor e texto do botão*/
+button{
+    align-items: center;
+    font-size: 12pt;
+    width: auto;
 }

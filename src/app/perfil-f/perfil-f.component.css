@@ -6,10 +6,6 @@
     font-size: 25px;
 }
 
-header {
-    background: rgba(26, 26, 26, 0.9);
-}
-
 #menu li a {
     text-decoration: none;
     color:white;
@@ -32,12 +28,24 @@ header {
 }
 
 .fundo{
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
+    background-color: rgba(167, 167, 167, 0.109);
+}
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Raio das bordas do form*/
+.form-control{
+    background-color: white;
+    font-size: 12pt;
+    border-color: rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+/*Alterações do placeholder*/
+input::placeholder {
+    color: rgba(0, 0, 0, 0.2)
+} 
+
+.form-group{
+    margin-bottom: 10px;
 }
 
 .box{
@@ -58,11 +66,7 @@ header {
 }
 
 .cardtitulo{
-    color: rgb(255, 123, 0);
-}
-
-.card{
-    width: 315px;
+    color: black;
 }
 
 .img-perfil{
@@ -75,12 +79,8 @@ header {
     flex-direction: column;
 }
 
-.card-postagem{
-    width: 700px;
-}
-
 .form-control-pesquisar{
-    width: 425px;
+    width: 350px !important;
 }
 .ppostagem{
     margin-right: 70% !important;
@@ -97,4 +97,21 @@ header {
 }
 @counter-style contador{
     system: numeric;
+}
+
+.card-columns{
+    display: inline;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    width: auto;
+}
+
+/*Cor e texto do botão*/
+button{
+    align-items: center;
+    font-size: 12pt;
+    width: auto;
 }

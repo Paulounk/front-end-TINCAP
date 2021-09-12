@@ -43,4 +43,12 @@ export class TemaComponent implements OnInit {
     })
   } 
 
+  tipoUsuario(){
+    if(environment.tipo =='empresa'){
+      this.router.navigate(['/perfil-e'])
+    }else{
+      this.router.navigate(['/perfil-f'])
+    }
+  }
+
 }
