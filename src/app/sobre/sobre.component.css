@@ -13,11 +13,12 @@
   }
   
   .titulo-home{
-    text-align: center;
-    margin-bottom: 40px;
-    color: #fba505;
+    color: orange;
+    font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 35px;
   }
   
   p{
