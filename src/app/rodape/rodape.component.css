@@ -1,9 +1,44 @@
-*{margin: 0; padding: 0;}
+.fundo-bg{
+    background: #ffc107;
+}
 
-p{
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.fa{
+    font-size: 35pt;
+    color: black;
+    padding: 10px;
+}
+
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-instagram:hover{
+    color: #C13584;
+}
+
+.fa-linkedin-square:hover{
+    color: #0072b1;
+}
+
+.bg-footer{
     background-color: black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 13px;
+}
+
+.titulo{
+    font-size: 18px;
+}
+
+.copyright{
+    color: rgb(202, 202, 202);
 }

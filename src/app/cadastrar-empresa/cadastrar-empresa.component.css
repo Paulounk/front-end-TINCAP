@@ -39,7 +39,7 @@ button{
 .form-control{
     background-color: white;
     font-size: 12pt;
-    border-color: rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
     color: black;
 }
 
@@ -54,12 +54,9 @@ input::placeholder {
 
 /*Box do form*/
 .box{  
-    border-radius: 20px;
-    border-color: rgb(0, 0, 0);
-    background-color: white;
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
 }
 
 .square {

@@ -20,6 +20,7 @@ export class PerfilEComponent implements OnInit {
   nome = environment.nome
   foto = environment.foto
   tipo = environment.tipo
+  id = environment.id
 
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]

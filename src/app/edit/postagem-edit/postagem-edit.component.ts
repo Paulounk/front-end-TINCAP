@@ -64,8 +64,23 @@ export class PostagemEditComponent implements OnInit {
     this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       alert('Postagem atualizada com sucesso!')
-      this.router.navigate(['/perfil-e'])
+      
+      if(environment.tipo =='empresa'){
+        this.router.navigate(['/perfil-e'])
+      }else{
+        this.router.navigate(['/perfil-f'])
+      }
+
     })
   }
+
+  tipoUsuario(){
+    if(environment.tipo =='empresa'){
+      this.router.navigate(['/perfil-e'])
+    }else{
+      this.router.navigate(['/perfil-f'])
+    }
+  }
+
 
 }

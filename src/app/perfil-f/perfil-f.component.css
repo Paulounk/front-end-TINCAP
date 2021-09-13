@@ -88,8 +88,7 @@ input::placeholder {
 }
 
 .card {
-    display: flex;
-    width: auto;
+    width: 100%;
 }
 
 

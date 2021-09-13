@@ -33,7 +33,7 @@ export class UsuarioEditComponent implements OnInit {
     }
 
     this.idUser = this.route.snapshot.params['id']
-    /*this.findByIdUser(this.idUser)*/
+    this.findByIdUser(this.idUser)
   }
 
   confirmSenha(event: any) {
@@ -65,10 +65,19 @@ export class UsuarioEditComponent implements OnInit {
     }
   }
 
-  /*  findByIdUser(id: number) {
+  findByIdUser(id: number) {
     this.authService.getByIdUser(id).subscribe((resp: Usuario) => {
       this.user = resp
     })
-  }*/
+  }
+
+  verificaUser(){
+    if(environment.tipo == 'administrador'){
+      this.router.navigate(['/perfil-e'])
+    }
+    else{
+      this.router.navigate(['/perfil-f'])
+    }
+  }
 
 }
