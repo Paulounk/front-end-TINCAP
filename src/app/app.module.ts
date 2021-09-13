@@ -22,6 +22,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
 
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EntrarComponent } from './entrar/entrar.component';
     RodapeComponent,
     MenuComponent,
     HomeComponent,
-    SobreComponent
+    SobreComponent,
+    UsuarioEditComponent
   ],
   imports: [
     BrowserModule,

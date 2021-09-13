@@ -14,11 +14,11 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
+  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
     return this.http.post<UsuarioLogin>("https://tincap.herokuapp.com/usuario/login", usuarioLogin)
   }
 
-  cadastrar(usuario: Usuario): Observable<Usuario>{
+  cadastrar(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>("https://tincap.herokuapp.com/usuario/cadastrar", usuario)
   }
 
@@ -33,9 +33,10 @@ export class AuthService {
   logado(){
     let ok: boolean = false
 
-    if(environment.token != ''){
+    if (environment.token != '') {
       ok = true
     }
     return ok
   }
+
 }

@@ -9,14 +9,6 @@
     background-size: cover;
 }
 
-.container {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .box {
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -44,11 +36,6 @@ button {
     color: black;
     background-color: orange;
     width: 100%;
-}
-
-.form-control:focus {
-    border-color: rgb(255, 149, 11);
-    box-shadow: 0 0 10px rgb(255, 167, 51);
 }
 
 button:hover {
