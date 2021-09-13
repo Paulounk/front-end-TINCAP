@@ -10,24 +10,23 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { PerfilEComponent } from './perfil-e/perfil-e.component';
 import { PerfilFComponent } from './perfil-f/perfil-f.component';
 import { TemaComponent } from './tema/tema.component';
-
+import { HomeComponent } from './home/home.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'sobre', component: SobreComponent},
   {path: 'entrar', component: EntrarComponent},
   {path: 'perfil-f', component: PerfilFComponent},
   {path: 'perfil-e', component: PerfilEComponent},
   {path: 'cadastrar-familia', component: CadastrarFamiliaComponent},
   {path: 'cadastrar-empresa', component: CadastrarEmpresaComponent},
-
   {path: 'tema', component: TemaComponent},
-
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
-
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
   {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
-  
 ];
 
 @NgModule({

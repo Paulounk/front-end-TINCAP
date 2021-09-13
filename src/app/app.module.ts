@@ -10,8 +10,9 @@ import { PerfilFComponent } from './perfil-f/perfil-f.component';
 import { PerfilEComponent } from './perfil-e/perfil-e.component';
 import { CadastrarFamiliaComponent } from './cadastrar-familia/cadastrar-familia.component';
 import { RodapeComponent } from './rodape/rodape.component';
-import { EntrarComponent } from './entrar/entrar.component';
 import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 import { CadastrarEmpresaComponent } from './cadastrar-empresa/cadastrar-empresa.component';
 import { TemaComponent } from './tema/tema.component';
@@ -19,6 +20,8 @@ import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { EntrarComponent } from './entrar/entrar.component';
+
 
 @NgModule({
   declarations: [
@@ -26,16 +29,17 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
     PerfilFComponent,
     PerfilEComponent,
     CadastrarFamiliaComponent,
-    RodapeComponent,
-    MenuComponent,
     EntrarComponent,
-    MenuComponent,
     CadastrarEmpresaComponent,
     TemaComponent,
     TemaEditComponent,
     TemaDeleteComponent,
     PostagemDeleteComponent,
-    PostagemEditComponent
+    PostagemEditComponent,
+    RodapeComponent,
+    MenuComponent,
+    HomeComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
