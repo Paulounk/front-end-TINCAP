@@ -28,7 +28,15 @@
 }
 
 .fundo {
-    background-color: rgba(167, 167, 167, 0.109);
+    background-color: rgba(243, 243, 243, 0.541);
+}
+
+.box {
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(242, 155, 0, 0.35);
+    padding: 50px;
+    height: 700px;
 }
 
 
@@ -52,17 +60,9 @@ input::placeholder {
     margin-bottom: 10px;
 }
 
-.box {
-    border-radius: 20px;
-    border-color: rgb(0, 0, 0);
-    background-color: rgba(242, 155, 0, 0.35);
-    padding: 50px;
-    height: 700px;
-}
-
 .form-control:focus {
     border-color: rgb(255, 149, 11);
-    box-shadow: 0 0 10px rgb(255, 149, 11);
+    box-shadow: 0 0 10px rgb(255, 167, 51);
 }
 
 .form-control-alinhamento {
@@ -70,11 +70,6 @@ input::placeholder {
 }
 
 .cardtitulo {
-    color: rgb(255, 123, 0);
-}
-
-.card {
-    width: 300px;
     color: black;
 }
 
@@ -83,33 +78,8 @@ input::placeholder {
     height: auto;
 }
 
-.card-columns {
-    display: inline;
-    flex-direction: column;
-}
-
-.card-postagem {
-    width: 600px;
-}
-
 .form-control-pesquisar {
     width: 350px !important;
-}
-
-.ppostagem {
-    margin-right: 70% !important;
-}
-
-.apoie {
-    background-color: rgba(255, 166, 0, 0.267);
-}
-
-.apoie:hover {
-    background-color: orange;
-}
-
-@counter-style contador {
-    system: numeric;
 }
 
 .card-columns {

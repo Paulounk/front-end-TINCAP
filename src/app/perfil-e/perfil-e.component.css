@@ -1,19 +1,19 @@
-.fs-12{
+.fs-12 {
     font-size: 12px;
 }
 
-.font-size-feed{
+.font-size-feed {
     font-size: 25px;
 }
 
 #menu li a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 #menu li a:hover {
     text-decoration: none;
-    color:rgb(255, 149, 11);
+    color: rgb(255, 149, 11);
 }
 
 .logo {
@@ -24,14 +24,14 @@
 
 .logo img {
     width: 101px;
-    height:30px;
+    height: 30px;
 }
 
-.fundo{
-    background-color: rgba(0, 0, 0, 0.411);
+.fundo {
+    background-color: rgba(243, 243, 243, 0.541);
 }
 
-.box{
+.box {
     border-radius: 20px;
     border-color: rgb(0, 0, 0);
     background-color: rgba(242, 155, 0, 0.35);
@@ -39,20 +39,24 @@
     height: 700px;
 }
 
+
 /*Raio das bordas do form*/
-.form-control{
+
+.form-control {
     background-color: white;
     font-size: 12pt;
     border-color: rgba(0, 0, 0, 0.4);
     color: black;
 }
 
+
 /*Alterações do placeholder*/
+
 input::placeholder {
     color: rgba(0, 0, 0, 0.2)
-} 
+}
 
-.form-group{
+.form-group {
     margin-bottom: 10px;
 }
 
@@ -61,35 +65,37 @@ input::placeholder {
     box-shadow: 0 0 10px rgb(255, 167, 51);
 }
 
-.form-control-alinhamento{
+.form-control-alinhamento {
     justify-content: end;
 }
 
-.cardtitulo{
+.cardtitulo {
     color: black;
 }
 
-.img-perfil{
+.img-perfil {
     width: 300px !important;
     height: auto;
 }
 
-.form-control-pesquisar{
+.form-control-pesquisar {
     width: 350px !important;
 }
 
-.card-columns{
+.card-columns {
     display: inline;
     flex-direction: column;
 }
 
-.card{
+.card {
     display: flex;
     width: auto;
 }
 
+
 /*Cor e texto do botão*/
-button{
+
+button {
     align-items: center;
     font-size: 12pt;
     width: auto;
