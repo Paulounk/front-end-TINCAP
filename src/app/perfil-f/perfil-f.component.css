@@ -62,7 +62,7 @@ header {
 }
 
 .card{
-    width: 315px;
+    width: 300px;
 }
 
 .img-perfil{
@@ -76,7 +76,7 @@ header {
 }
 
 .card-postagem{
-    width: 700px;
+    width: 600px;
 }
 
 .form-control-pesquisar{
@@ -88,9 +88,6 @@ header {
 }
 .apoie{
     background-color: rgba(255, 166, 0, 0.267);
-    
-
-
 }
 .apoie:hover{
     background-color: orange;

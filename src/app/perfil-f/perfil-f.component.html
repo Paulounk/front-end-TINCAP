@@ -13,13 +13,13 @@
             <form class="form-inline my-2 my-lg-0 ml-auto">
                 <input [(ngModel)] = 'tituloPostagem' name="search" class="form-control form-control-pesquisar mr-sm-2 form-control-alinhamento" type="search" placeholder="Pesquisar uma postagem" aria-label="Pesquisar">
                 <button class="btn btn-warning my-2 my-sm-0" type="button" (click)='findByTituloPostagem()'>Pesquisar</button>
-              </form>
+            </form>
         </div>
         <!--Link configurações-->
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" id="menu">
             <ul class="navbar-nav ml-auto" id="menu">
                 <li class="nav-item mr-sm-2">
-                    <p class="m-0 text-white"> <a href="cadastrar.html">Configurações</a></p>
+                    <p class="m-0 text-white"> <a href="cadastrar-familia.component.html">Configurações</a></p>
                 </li>
             </ul>
             <!--sair-->
@@ -102,6 +102,7 @@
                         </div>
                     </nav>
 
+                    
                     <div class="tab-content mt-5" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
                             aria-labelledby="nav-todasPostagens-tab">
@@ -131,6 +132,7 @@
                                 </div>
                             </div>
                         </div>
+                    
 
                         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
                             <div class="card-columns">
@@ -197,3 +199,4 @@
                 </div>
             </div>
     </div>
+</div>
