@@ -1,98 +1,101 @@
 @keyframes slide {
-    from { 
+    from {
         transform: translateX(43vw);
     }
-    to { 
+    to {
         transform: translateX(0);
     }
-  }
-  
-  .bg-sobre{
+}
+
+.bg-sobre {
     height: 100vh;
     background-color: rgb(15, 15, 15);
-  }
-  
-  .titulo-home{
+}
+
+.titulo-home {
     color: orange;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 5px;
     text-align: center;
     margin-bottom: 35px;
-  }
-  
-  p{
-    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
     text-align: justify;
     color: rgb(255, 255, 255);
-  }
-  
-  
-  /* -------------------------------------------------------------------------- */
-  /*             INICIO DA ESTILIZAÇÃO DA HOME-PAGE - TERCEIRA DOBRA            */
-  /* -------------------------------------------------------------------------- */
-.card-text{
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
-  
-.bg-equipe{
-  background-image: url('https://i.imgur.com/GgeiHNX.png');
-  background-size:cover;
-  background-position: center;
-}
-  
-.titulo-equipe{
-  color: orange;
-  font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 5px;
 }
 
 
+/* -------------------------------------------------------------------------- */
 
-.fundo-bg{
-  background: #ffc107;
+
+/*             INICIO DA ESTILIZAÇÃO DA HOME-PAGE - TERCEIRA DOBRA            */
+
+
+/* -------------------------------------------------------------------------- */
+
+.card-text {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
-ul.social-network{
-  list-style: none;
-  padding: 0;
+.bg-equipe {
+    background-image: url('https://i.imgur.com/GgeiHNX.png');
+    background-size: cover;
+    background-position: center;
 }
 
-ul.social-network li{
-  display: inline;
-  margin: 0;
-  padding: 0;
+.titulo-equipe {
+    color: orange;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
 }
 
-.fa{
-  font-size: 35pt;
-  color: black;
-  padding: 10px;
+.fundo-bg {
+    background: #ffc107;
 }
 
-.fa-facebook-square:hover{
-  color: #3b5998;
+ul.social-network {
+    list-style: none;
+    padding: 0;
 }
 
-.fa-instagram:hover{
-  color: #C13584;
+ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
-.fa-linkedin-square:hover{
-  color: #0072b1;
+.fa {
+    font-size: 35pt;
+    color: black;
+    padding: 10px;
 }
 
-.bg-footer{
-  background-color: black;
+.fa-facebook-square:hover {
+    color: #3b5998;
 }
 
-.titulo{
-  font-size: 18px;
+.fa-instagram:hover {
+    color: #C13584;
 }
 
-.copyright{
-  color: rgb(202, 202, 202);
+.fa-linkedin-square:hover {
+    color: #0072b1;
+}
+
+.bg-footer {
+    background-color: black;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.copyright {
+    color: rgb(202, 202, 202);
 }
