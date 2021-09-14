@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class CadastrarFamiliaComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -31,21 +33,21 @@ export class CadastrarFamiliaComponent implements OnInit {
     this.user.tipo = 'familia'
     
     if(this.user.nomeCompleto.length < 5){
-      alert('O usuário deve conter no mínimo 5 caracteres.')
+      this.alertas.showAlertInfo('O usuário deve conter no mínimo 5 caracteres.')
     }
     if(this.user.usuario.indexOf('@') == -1 || this.user.usuario.indexOf('.') == -1){
-      alert('O usuário deve ser um email (e.g. usuario@usuario.com)')
+      this.alertas.showAlertInfo('O usuário deve ser um email (e.g. usuario@usuario.com)')
     }
 
     if(this.user.senha.length < 8){
-      alert('A senha deve conter no mínimo 8 dígitos.')
+      this.alertas.showAlertInfo('A senha deve conter no mínimo 8 dígitos.')
     }else if(this.user.senha != this.confirmarSenha){
-      alert('As senhas informadas estão diferentes!')
+      this.alertas.showAlertInfo('As senhas informadas estão diferentes!')
     }else{
       this.authService.cadastrar(this.user).subscribe((resp: Usuario) => {
         this.user = resp
         this.router.navigate(['/entrar'])
-        alert('Usuário cadastrado com sucesso')
+        this.alertas.showAlertSuccess('Usuário cadastrado com sucesso')
       })
     }
   }

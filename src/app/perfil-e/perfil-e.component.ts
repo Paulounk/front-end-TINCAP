@@ -5,6 +5,7 @@ import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
 import { Usuario } from '../model/Usuario';
 import { UsuarioLogin } from '../model/UsuarioLogin';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
@@ -25,7 +26,7 @@ export class PerfilEComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
   tituloPostagem: string
- 
+
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
@@ -40,43 +41,43 @@ export class PerfilEComponent implements OnInit {
     private router: Router,
     private postagemService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertas: AlertasService
   ) { }
 
-  ngOnInit(){
+  ngOnInit() {
     window.scroll(0, 0)
 
-   /* if(environment.token == ''){
-      //alert('Sua sessão expirou, faça login novamente.')
-      //this.router.navigate(['/entrar'])
-    }*/
+    if (environment.token == '') {
+      this.router.navigate(['/entrar'])
+    }
 
     this.getAllTemas()
     this.getAllPostagens()
   }
   //Temas
-  getAllTemas(){
+  getAllTemas() {
     this.temaService.getAllTema().subscribe((resp: Tema[]) => {
       this.listaTemas = resp
     })
   }
 
-  findByIdTema(){
+  findByIdTema() {
     this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) => {
       this.tema = resp
     })
   }
 
   //Postagens
-  getAllPostagens(){
+  getAllPostagens() {
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
     })
   }
 
-  findByTituloPostagem(){
+  findByTituloPostagem() {
 
-    if(this.tituloPostagem == ''){
+    if (this.tituloPostagem == '') {
       this.getAllPostagens()
     }
 
@@ -86,13 +87,13 @@ export class PerfilEComponent implements OnInit {
   }
 
 
-  findByIdUser(){
+  findByIdUser() {
     this.authService.getByIdUser(this.idUser).subscribe((resp: Usuario) => {
-      this.user = resp 
+      this.user = resp
     })
   }
 
-  publicar(){
+  publicar() {
     this.tema.id = this.idTema
     this.postagem.tema = this.tema
 
@@ -101,7 +102,7 @@ export class PerfilEComponent implements OnInit {
 
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
-      alert('Postagem realizada com sucesso!')
+      this.alertas.showAlertSuccess('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
       this.getAllPostagens()
     })

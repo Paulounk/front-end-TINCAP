@@ -24,6 +24,8 @@ import { EntrarComponent } from './entrar/entrar.component';
 
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { AlertasComponent } from './alertas/alertas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -42,14 +44,16 @@ import { OrderModule } from 'ngx-order-pipe';
     MenuComponent,
     HomeComponent,
     SobreComponent,
-    UsuarioEditComponent
+    UsuarioEditComponent,
+    AlertasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    OrderModule
+    OrderModule,
+    ModalModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,
