@@ -54,10 +54,11 @@ header {
 .button-1 {
   text-align: center;
   background-color: #FFFFFF;
+  color: black;
   padding: 8px;
   width: 115px;
   border-radius: 10px;
-  margin-right: 15px;
+  margin-right: 10px;
   height: 40px;
 }
   

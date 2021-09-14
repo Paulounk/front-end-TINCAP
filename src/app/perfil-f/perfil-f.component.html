@@ -56,7 +56,7 @@
 
         <!--coluna 2-->
 
-        <div class="col-md-6">
+        <div class="col-md-6 container-fluid">
             <div class="row mt-5 d-flex justify-content-center">
                 <div class="col-md-12">
                     <p class="text-center font-size-feed cardtitulo">Feed de notícias</p>
@@ -116,16 +116,16 @@
                                 </div>
                             </nav>
 
-                            <div class="tab-content mt-3 mb-3" id="nav-tabContent">
+                            <div class="tab-content container-fluid mt-3 mb-3" id="nav-tabContent">
 
                                 <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
                                     aria-labelledby="nav-todasPostagens-tab">
 
                                     <div class="card-columns">
 
-                                        <div class="card text-center card-postagem" *ngFor='let item of listaPostagens'>
+                                        <div class="card text-center card-postagem" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
                                             
-                                            <div class="card-body d-lg-flex p-5">
+                                            <div class="card-body p-5">
                                                 <h5 class="card-title m-0">{{item.titulo}}</h5>
                                                 <small class="text-muted">Tema: {{item.tema.descricao}}</small>
                                                 <p class="card-text mt-3">{{item.conteudo}}</p>
@@ -140,32 +140,37 @@
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="minhasPostagens" role="tabpanel"
+                                <div class="tab-pane fade show" id="minhasPostagens" role="tabpanel"
                                     aria-labelledby="nav-minhasPostagens-tab">
+
                                     <div class="card-columns">
-                                        <div class="card text-center card-postagem" *ngFor='let item of user.postagem'>
-                                            <div class="card-body d-lg-flex p-5">
+
+                                        <div class="card text-center" *ngFor='let item of user.postagem | orderBy : key : reverse'>
+                                            
+                                            <div class="card-body p-5">
                                                 <h5 class="card-title m-0">{{item.titulo}}</h5>
                                                 <small class="text-muted">Tema: {{item.tema.descricao}}</small>
                                                 <p class="card-text mt-3">{{item.conteudo}}</p>
                                                 <p class="card-text"><small class="text-muted">{{item.data | date:
                                                         'dd/MM/yyyy'}} às {{item.data
                                                         | date: 'HH:mm'}} </small></p>
-
                                                 <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3"
-                                                    href="">Editar</a>
+                                                href="">Editar</a>
                                                 <a [routerLink]="['/postagem-delete', item.id]" class="text-danger"
-                                                    href="">Apagar</a>
+                                                href="">Apagar</a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
+
+                                
 
                                 <div class="tab-pane fade" id="postagemTema" role="tabpanel"
                                     aria-labelledby="nav-postagemTema-tab">
                                     <div class="card-columns" *ngFor='let tema of listaTemas'>
-                                        <div class="card text-center card-postagem" *ngFor='let item of tema.postagem'>
-                                            <div class="card-body d-lg-flex">
+                                        <div class="card text-center card-postagem" *ngFor='let item of tema.postagem | orderBy : key : reverse'>
+                                            <div class="card-body">
                                                 <h5 class="card-title m-0">{{item.titulo}}</h5>
                                                 <p class="card-text mt-3">{{item.conteudo}}</p>
                                                 <p class="card-text"><small class="text-muted">{{item.data | date:

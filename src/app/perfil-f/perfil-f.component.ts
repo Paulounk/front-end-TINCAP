@@ -31,6 +31,9 @@ export class PerfilFComponent implements OnInit {
   user: Usuario = new Usuario()
   idUser = environment.id
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,

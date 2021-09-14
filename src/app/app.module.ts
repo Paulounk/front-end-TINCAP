@@ -23,6 +23,7 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { EntrarComponent } from './entrar/entrar.component';
 
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,

@@ -84,15 +84,7 @@ input::placeholder {
 
 .card-columns {
     display: inline;
-    flex-direction: column;
 }
-
-.card {
-    width: 100%;
-}
-
-
-/*Cor e texto do botão*/
 
 button {
     align-items: center;
